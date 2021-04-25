@@ -1,0 +1,16 @@
+<table>
+  <thead>
+  <tr>
+    <th *ngFor="let head of tableHeades " scope="col"> {{head}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let driver of driverArray">
+    <th scope="row">{{driver.id}}</th>
+    <th scope="row">{{driver.name}}</th>
+    <th scope="row">{{driver.mean}}</th>
+    <th scope="row">{{driver.median}}</th>
+    <th scope="row">{{driver.totalRaces}}</th>
+  </tr>
+  </tbody>
+</table>

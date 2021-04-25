@@ -1,0 +1,26 @@
+
+
+  <div style="display: block" *ngIf="barChartData">
+
+
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+    >
+      >
+    </canvas>
+<h2> Lewis </h2>
+    <canvas baseChart
+            [datasets]="barChartDataLew"
+            [labels]="barChartLabelsLew"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+    >
+      >
+    </canvas>
+  </div>
+
