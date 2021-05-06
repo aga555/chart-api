@@ -18,4 +18,23 @@ export class StatsService {
 
   }
 
+  findSpeedDrivers() {
+    const apiUrl = Constants.FIND_ALL_DRIVERS_SPEED;
+    return this.http.get<string[]>(apiUrl)
+      .map(result => result);
+
+  }
+
+  findSpeedLewis() {
+    const apiUrl = Constants.FIND_MAX_SPEED;
+    return this.http.get<string[]>(apiUrl)
+      .map(result => result);
+
+  }
+  findSpeedMax() {
+    const apiUrl = Constants.FIND_MAX_SPEED;
+    return this.http.get<string[]>(apiUrl)
+      .map(result => result);
+
+  }
 }
